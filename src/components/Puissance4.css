@@ -1,6 +1,8 @@
 .puissance4-container {
   text-align: center;
-  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .board {
@@ -17,6 +19,14 @@
 
 .row {
   display: flex;
+}
+
+.status {
+  margin-top: 10px;
+  margin-bottom: 2px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
 }
 
 .cell {
@@ -58,7 +68,7 @@
 }
 
 .reset {
-  margin-top: 20px;
+  margin-top: 10px;
   padding: 10px 20px;
   font-size: 16px;
   background-color: #5bc0de;
