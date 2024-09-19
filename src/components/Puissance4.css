@@ -1,0 +1,73 @@
+.puissance4-container {
+  text-align: center;
+  margin: 20px;
+}
+
+.board {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: max-content;
+  border: 2px solid #444;
+  background-color: #008cba;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.row {
+  display: flex;
+}
+
+.cell {
+  width: 60px;
+  height: 60px;
+  background-color: #eee;
+  border: 2px solid #444;
+  margin: 2px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.cell:hover {
+  background-color: #ddd;
+}
+
+.disc {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+  top: -100%;
+  animation: drop 0.5s forwards;
+}
+
+.disc.rouge {
+  background-color: red;
+}
+
+.disc.jaune {
+  background-color: yellow;
+}
+
+@keyframes drop {
+  to {
+    top: 0;
+  }
+}
+
+.reset {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #5bc0de;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.reset:hover {
+  background-color: #46a3c6;
+}
