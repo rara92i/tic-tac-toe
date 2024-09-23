@@ -23,7 +23,7 @@
 
 .status {
   margin-top: 10px;
-  margin-bottom: 2px;
+  margin-bottom: 5px;
   font-size: 20px;
   font-weight: bold;
   color: #fff;
@@ -80,4 +80,15 @@
 
 .reset:hover {
   background-color: #46a3c6;
+}
+
+@media only screen and (max-width: 600px) {
+}
+
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+
+}
+
+@media only screen and (min-width: 901px) {
+  
 }
