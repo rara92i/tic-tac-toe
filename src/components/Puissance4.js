@@ -91,7 +91,7 @@ export default function Puissance4() {
         ))}
       </div>
       {winner && <button className="reset" onClick={resetGame}>Rejouer</button>}
-      <button className="reset" onClick={handlereset}>Rejouer</button>
+      {!winner && <button className="reset" onClick={handlereset}>Rejouer</button>}
     </div>
   );
 }
